@@ -6,10 +6,13 @@
 
 2. How are we going to measure the accuracy of the forecasting model ? 
 
-a. Splitting data into test and training sets based on an 80 – 20 % split. In our case this would be splitting the sales data based on the number of years 
-b. Comparing the error measures of the model with other basic models like Naïve and seasonal Naïve
-c. Measuring residual percentage errors by calculating the Mean absolute percentage error: MAPE
-d. There is a possible forth option to running the model on car sales for a different brand comparable to the one we are using which in our case is Honda 
+     a. Splitting data into test and training sets based on an 80 – 20 % split. In our case this would be splitting the sales data based on the number of years
+     
+     b. Comparing the error measures of the model with other basic models like Naïve and seasonal Naïve
+     
+     c. Measuring residual percentage errors by calculating the Mean absolute percentage error: MAPE
+     
+     d. There is a possible forth option to running the model on car sales for a different brand comparable to the one we are using which in our case is Honda 
 
 3. Source Data Details 
 <TBD>
