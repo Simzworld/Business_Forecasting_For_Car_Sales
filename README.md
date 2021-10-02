@@ -16,7 +16,7 @@
 
 3. Source Data Details 
 
-The data set consists of Honda unit volume sales. The data is displayed on a monthly basis from 2005 through August 2021. The data is sourced from "goodcarbadcar.com" where they have a tabular format of the whole sales data.
+     The data set consists of Honda unit volume sales. The data is displayed on a monthly basis from 2005 through August 2021. The data is sourced from    "goodcarbadcar.com" where they have a tabular format of the whole sales data.
 
 4. Links to group members profiles
 https://github.com/harshalutekar/Honda-Sales-Forecasting/projects
