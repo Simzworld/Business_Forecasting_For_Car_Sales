@@ -20,6 +20,6 @@
 
 4. Links to group members profiles
 
-https://github.com/harshalutekar/Honda-Sales-Forecasting/projects
+     https://github.com/harshalutekar/Honda-Sales-Forecasting/projects
 
-https://github.com/stephele?tab=projects
+     https://github.com/stephele?tab=projects
