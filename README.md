@@ -15,7 +15,9 @@
      d. There is a possible forth option to running the model on car sales for a different brand comparable to the one we are using which in our case is Honda 
 
 3. Source Data Details 
-<TBD>
+
+The data set consists of Honda unit volume sales. The data is displayed on a monthly basis from 2005 through August 2021. The data is sourced from "goodcarbadcar.com" where they have a tabular format of the whole sales data.
 
 4. Links to group members profiles
-<TBD>
+https://github.com/harshalutekar/Honda-Sales-Forecasting/projects
+https://github.com/stephele?tab=projects
