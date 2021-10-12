@@ -1,0 +1,100 @@
+---
+title: "BF Group Project"
+output:
+  html_document:
+    df_print: paged
+---
+
+##Importing Libraries
+
+```{r}
+library(fpp)
+library(fpp2)
+library(TTR)
+```
+
+##Importing the data
+
+```{r}
+library(readxl)
+honda <- read_excel("D:/Rutgers/BF/Honda Sales Data.xlsx")
+View(honda)
+```
+
+
+##Data Type
+
+```{r}
+str(honda)
+class(honda)
+```
+
+
+
+##Converting into a Time-Series
+
+```{r}
+?ts
+honda_ts <- ts(honda$`Car Sales`,frequency = 12,start = c(2005,1),end = c(2021,8))
+honda_ts
+class(honda_ts)
+attributes(honda_ts)
+```
+
+##Plot the time-series
+
+```{r}
+plot(honda_ts)
+```
+##STL Function
+
+```{r}
+honda_fit <- stl(honda_ts,s.window = "periodic")
+plot(honda_fit)
+```
+##Acf
+
+```{r}
+?acf
+honda_acf <- Acf(honda_ts,type = "correlation")
+```
+##Mean Forecast
+
+```{r}
+?meanf
+honda_mean_f <- meanf(honda_ts,h=12)
+plot(honda_mean_f)
+```
+##Naive Forecast
+
+```{r}
+?naive
+honda_naive_f <- naive(honda_ts,h=3)
+plot(honda_naive_f)
+```
+##Random Walk
+
+```{r}
+honda_rwf_f <- rwf(honda_ts,3)
+plot(honda_rwf_f)
+```
+##Snaive Forecast
+
+```{r}
+honda_snaive_f <- snaive(honda_ts,6)
+plot(honda_snaive_f)
+```
+##ETS method
+
+```{r}
+honda_ets <- ets(honda_ts)
+honda_ets
+plot(honda_ets)
+```
+##Holts-Winter
+
+```{r}
+honda_hw_f <- HoltWinters(honda_ts)
+plot(honda_hw_f)
+```
+
